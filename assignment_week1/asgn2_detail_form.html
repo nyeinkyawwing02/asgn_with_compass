@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Information</title>
+    <link rel="" type="image/x-icon" href="favicon.ico">
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        button {
+            background-color: purple;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            align-item: center;
+            width: 80px;
+            height: 40px;
+        }
+
+        .content-form {
+            display: block;
+            margin: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Detail Form</legend>
+                
+                <div class="content-form">
+                <label for="fname">First Name</label> <br/>
+                <input type="text" name="fname" id="fname"> <br/><br/>
+            
+                <label for="lname">Last Name</label> <br/>
+                <input type="text" name="lname" id="lname"> <br/><br/>
+            
+                <label for="lang">Native Language</label> <br/>
+                <select>
+                    <option value="">Select a language</option>
+                    <option value="eng">English</option>
+                    <option value="burma">Burmese</option>
+                    <option value="british">British</option>
+                    <option value="jpn">Japanese</option>
+                </select> <br/><br/>
+            
+                <label for="age">Your Age</label> <br/>
+                <input type="radio" id="age" name="age"> <label> 0 - 15 years</label> <br/>
+                <input type="radio" id="age" name="age"> <label> 16 - 20 years</label> <br/>
+                <input type="radio" id="age" name="age"> <label> 21 - 25 years</label> <br/>
+                <input type="radio" id="age" name="age"> <label> 26 - 30 years</label>
+<br/><br/>
+
+                <label for="favclr">Your Favorite Color</label> <br/>
+                <input type="checkbox" id="favclr" name="red"> <label>red</label><br/>
+                <input type="checkbox" id="favclr" name="red"> <label>yellow</label><br/>
+                <input type="checkbox" id="favclr" name="red"> <label>orange</label><br/>
+                <input type="checkbox" id="favclr" name="red"> <label>black</label><br/>
+                <input type="checkbox" id="favclr" name="red"> <label>white</label><br/><br/>
+
+                <label for="passw1">Current Password</label><br/>
+                <input type="password" id="passw1" name="passw1"><br/><br/>
+                <label for="passw2">Confirm Password</label><br/>
+                <input type="password" id="passw2" name="passw2"><br/><br/>
+<br/>
+                <button type="submit" id="submit">Submit</button>
+
+                </div>
+            </fieldset>
+        </form>
+
+        <footer>
+            <small>&copy; Copyright by Juro</small>
+        </footer>
+    </div>
+</body>
+</html>
