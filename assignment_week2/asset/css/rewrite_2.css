@@ -1,0 +1,241 @@
+:root {
+    --ButtonTextColor: #fff;
+    --ButtonBackgroundColor: #1a8fe3;
+    --BackgroundColor: #c7eae4;
+}
+
+.price-table-wrapper {
+    width: 940px;
+    margin: auto;
+    padding: 2vw;
+}
+
+.price-table-wrapper * {
+    box-sizing: border-box;
+}
+
+.price-table {
+    display: none;
+}
+
+.price-table.active {
+    display: table;
+}
+
+table {
+    width: 100%;
+    max-width: 940px;
+    border-collapse: collapse;
+}
+
+tr.feature-title-Row th {
+    width: 40%;
+}
+
+tr.feature-title-Row td {
+    width: 20%;
+}
+
+th, td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 12px 12px;
+    font-weight: unset;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+thead th,
+.package-price-row td, 
+.feature-title,
+.feature-list-item {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: brandon-grotesque;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.package-title-row th {
+    padding: 0px 0px;
+}
+
+.package-title-row th:first-child,
+.package-price-row th, 
+.cta-button-row-top th {
+    border: none;
+}
+
+/* .package-price-row th {
+    font-weight: 900;
+} */
+
+.cta-button-row-bottom {
+    display: none;
+}
+
+.package-price-row td {
+    padding: 15px;
+    color: #545454;
+}
+
+.package-price-row td span {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.text-box {
+    display: flex;
+    align-items: center;
+    padding: 1.4vh;
+    text-align: center;
+    justify-content: center;
+    color: var(--ButtonTextColor);
+    background-color: var(--ButtonBackgroundColor);
+}
+
+.table-btn {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: var(--ButtonBackgroundColor);
+    color: var(--ButtonTextColor);
+    text-transform: uppercase;
+}
+
+.feature-title-Row, 
+.feature-list-item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.feature-items-gap * {
+    border: none;
+}
+
+.feature-title-Row th,
+.feature-title-Row td {
+    background-color: var(--BackgroundColor) !important;
+}
+
+.feature-title-Row td {
+    border: none;
+}
+
+.feature-title {
+    border-right: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.feature-list-item {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.package-title-row th:nth-child(2),
+.package-price-row td:nth-child(2),
+.cta-button-row td:nth-child(2),
+/* .feature-title-Row td:nth-child(2), */
+.feature-list-ability:nth-child(2) {
+    background: linear-gradient(45deg, #fff, #e7e7e7);
+    background-attachment: fixed;
+}
+
+.package-title-row th:nth-child(3),
+.package-price-row td:nth-child(3),
+.cta-button-row td:nth-child(3),
+/* .feature-title-Row td:nth-child(3), */
+.feature-list-ability:nth-child(3) {
+    background: linear-gradient(45deg, #fff, #c7eae4);
+    background-attachment: fixed;
+}
+
+.package-title-row th:nth-child(4),
+.package-price-row td:nth-child(4),
+.cta-button-row td:nth-child(4),
+/* .feature-title-Row td:nth-child(4), */
+.feature-list-ability:nth-child(4) {
+    background: linear-gradient(45deg, #fff, #e7e7e7);
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 640px) {
+    tr {
+        display: flex;
+        width: 100%;
+    }
+
+    td, th {
+        width: inherit;
+    }
+
+    .package-title-row th:first-child, 
+    .package-price-row th:first-child,
+    .cta-button-row th{
+        display: none;
+    }
+    
+    .feature-title-Row th {
+        width: 100% !important;
+    }
+    .feature-title-Row td {
+        display: none;
+    }
+    .feature-list-item,
+    .package-price-row th,
+    .feature-items-gap {
+        width: 100% !important;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .feature-list-item th {
+        grid-area: 1 / 1 / span 2 / span 3;
+    }
+    .feature-list-item td {
+        display: block;
+    }
+    .feature-list-item p {
+        margin: auto;
+        width: 100%;
+        min-width: 30px;
+    }
+
+    .feature-items-gap td {
+        grid-area: 1 / 1 / span 2 / span 3;
+    }
+
+    .price-table-wrapper {
+        width: 95%;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .package-title-row * {
+        font-size: 17px;
+    }
+
+    .package-price-row * {
+        font-size: 1em !important;
+    }
+
+    .package-price-row span {
+        display: block;
+        font-size: 0.7em !important;
+    }
+    
+    .package-price-row td, 
+    .package-title-row th, 
+    .cta-button-row td{
+        width: 33%;
+    } 
+}
