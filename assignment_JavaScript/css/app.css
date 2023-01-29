@@ -1,0 +1,55 @@
+:root {
+  --clr-primary: #fefefe;
+  --clr-secondary: #111111;
+
+  --fw-400: 400;
+  --fw-500: 500;
+
+  --fs-001: 0.75rem;
+  --fs-002: 1rem;
+}
+
+/* ======= reset style ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--clr-primary);
+}
+
+body {
+  width: 100%;
+  color: var(--clr-secondary);
+  font-size: var(--fs-002);
+  font-weight: var(--fw-400);
+}
+
+input,
+button {
+  font: inherit;
+}
+
+h1 span {
+    color: violet;
+}
+
+.container {
+    margin: 8% auto;
+}

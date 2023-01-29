@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Login JS DOM</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <section id="dom-pj">
+      <div class="px-0 px-lg-4 py-5 px-md-5 text-start">
+        <div class="container">
+          <div class="row gx-lg-5 align-items-center">
+            <!-- Registration Method -->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <form action="#" method="get" class="rounded shadow p-2 p-lg-5">
+                <h1 class="text-dark fw-bolder fs-4 mb-4 text-center">
+                  Create new account in <span>JS DOM</span>
+                </h1>
+
+                <p id="reg_error" class=""></p>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label" for="fname">First name</label>
+                      <input
+                        type="text"
+                        id="fname"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label" for="lname">Last name</label>
+                      <input type="text" id="lname" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-2">
+                  <label class="form-label" for="reg_email">Email</label>
+                  <input
+                    type="email"
+                    id="reg_email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-2">
+                  <label class="form-label" for="reg_pass">Password</label>
+                  <input
+                    type="password"
+                    id="reg_pass"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <!-- Submit button -->
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block w-100 my-4"
+                  onclick="register()"
+                >
+                  Sign up
+                </button>
+                <p id="info"></p>
+              </form>
+            </div>
+
+            <!-- Login Method -->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <form action="#" method="get" class="rounded shadow p-2 p-lg-5">
+                <h1 class="text-dark fw-bolder fs-4 mb-4 text-center">
+                  Login to <span>JS DOM</span>
+                </h1>
+
+                <p id="errors" class=""></p>
+                <!-- Email input -->
+                <div class="form-outline mb-2">
+                  <label class="form-label" for="email">Email</label>
+                  <input type="email" id="email" class="form-control" />
+                  <p id="email_err"></p>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-2">
+                  <label class="form-label" for="password">Password</label>
+                  <input type="password" id="password" class="form-control" />
+                  <p id="password_err"></p>
+                </div>
+
+                <!-- Submit button -->
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block w-100 my-4"
+                  onclick="login()"
+                >
+                  Log in
+                </button>
+                <p id="success"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
