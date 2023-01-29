@@ -27,7 +27,7 @@ function register() {
         authorize['email'] = email;
         authorize['current-password'] = password;
 
-        noti.info.innerHTML = JSON.stringify(authorize);
+        noti.info.innerHTML = JSON.stringify(authorize, null, 4);
         noti.info.className = "alert alert-success";
         alert("You've created a new account successfully!");
     } else {
